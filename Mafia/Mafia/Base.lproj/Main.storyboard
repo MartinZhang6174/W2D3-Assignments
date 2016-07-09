@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jyg-WQ-Uhs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Play As Mafia"/>
+                                <connections>
+                                    <segue destination="CTh-Sw-qkb" kind="show" id="gPn-u2-MNU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqJ-1r-IUk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Play As Sheriff"/>
+                                <connections>
+                                    <segue destination="itq-mb-DA2" kind="show" id="mfh-Za-NuC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mafia Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF1-9O-tVr">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a player to play as." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnd-Ps-hhc">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZqJ-1r-IUk" secondAttribute="trailing" constant="27" id="COg-Jh-nz9"/>
+                            <constraint firstItem="Jyg-WQ-Uhs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="27" id="IJv-C5-LUU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jyg-WQ-Uhs" secondAttribute="bottom" constant="270" id="MSX-0J-aUZ"/>
+                            <constraint firstItem="cF1-9O-tVr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="106" id="PV2-MS-Dqf"/>
+                            <constraint firstItem="Mnd-Ps-hhc" firstAttribute="top" secondItem="cF1-9O-tVr" secondAttribute="bottom" constant="15" id="RcD-ou-6zW"/>
+                            <constraint firstItem="Mnd-Ps-hhc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hUR-y7-KO6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZqJ-1r-IUk" secondAttribute="bottom" constant="270" id="pbT-hc-PIM"/>
+                            <constraint firstItem="cF1-9O-tVr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uDY-TD-jFd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Jyg-WQ-Uhs"/>
+                                <exclude reference="ZqJ-1r-IUk"/>
+                                <exclude reference="cF1-9O-tVr"/>
+                                <exclude reference="Mnd-Ps-hhc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="PV2-MS-Dqf"/>
+                                <exclude reference="uDY-TD-jFd"/>
+                                <exclude reference="RcD-ou-6zW"/>
+                                <exclude reference="hUR-y7-KO6"/>
+                                <exclude reference="IJv-C5-LUU"/>
+                                <exclude reference="COg-Jh-nz9"/>
+                                <exclude reference="MSX-0J-aUZ"/>
+                                <exclude reference="pbT-hc-PIM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Jyg-WQ-Uhs"/>
+                                <include reference="ZqJ-1r-IUk"/>
+                                <include reference="cF1-9O-tVr"/>
+                                <include reference="Mnd-Ps-hhc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="PV2-MS-Dqf"/>
+                                <include reference="uDY-TD-jFd"/>
+                                <include reference="RcD-ou-6zW"/>
+                                <include reference="hUR-y7-KO6"/>
+                                <include reference="IJv-C5-LUU"/>
+                                <include reference="COg-Jh-nz9"/>
+                                <include reference="MSX-0J-aUZ"/>
+                                <include reference="pbT-hc-PIM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="352.5"/>
+        </scene>
+        <!--Mafia View Controller-->
+        <scene sceneID="zaE-KO-r8a">
+            <objects>
+                <viewController id="CTh-Sw-qkb" customClass="MafiaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BJW-EF-MQs"/>
+                        <viewControllerLayoutGuide type="bottom" id="lPe-vz-73g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h9P-gE-aVP">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congrats you won the mini game! Now choose someone to kill." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDg-xb-aBK">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lDg-xb-aBK" firstAttribute="centerX" secondItem="h9P-gE-aVP" secondAttribute="centerX" id="9qE-9t-o4h"/>
+                            <constraint firstItem="lDg-xb-aBK" firstAttribute="top" secondItem="BJW-EF-MQs" secondAttribute="bottom" constant="90" id="WL1-gk-fTv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lDg-xb-aBK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="9qE-9t-o4h"/>
+                                <exclude reference="WL1-gk-fTv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="lDg-xb-aBK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="9qE-9t-o4h"/>
+                                <include reference="WL1-gk-fTv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yaF-0H-6fA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="735.75"/>
+        </scene>
+        <!--Sheriff View Controller-->
+        <scene sceneID="NSh-iP-WsW">
+            <objects>
+                <viewController id="itq-mb-DA2" customClass="SheriffViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EB5-hD-3kX"/>
+                        <viewControllerLayoutGuide type="bottom" id="YvH-I8-sBn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dHm-VY-kQ1">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congrats you won the mini game! Now choose someone to inspect." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVp-vg-5Lr">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hVp-vg-5Lr" firstAttribute="centerX" secondItem="dHm-VY-kQ1" secondAttribute="centerX" id="P0B-U9-TAg"/>
+                            <constraint firstItem="hVp-vg-5Lr" firstAttribute="top" secondItem="EB5-hD-3kX" secondAttribute="bottom" constant="90" id="YPA-fh-Raq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="hVp-vg-5Lr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="P0B-U9-TAg"/>
+                                <exclude reference="YPA-fh-Raq"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="hVp-vg-5Lr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="P0B-U9-TAg"/>
+                                <include reference="YPA-fh-Raq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wHs-6M-pTP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="-17.25"/>
+        </scene>
+    </scenes>
+</document>
